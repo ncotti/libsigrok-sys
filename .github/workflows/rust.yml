@@ -24,7 +24,7 @@ jobs:
       - name: "Install libsigrok"
         shell: bash
         run: |
-          apt install libsigrok-dev libsigrokdecode-dev
+          sudo apt install libsigrok-dev libsigrokdecode-dev
 
       - name: "Call cargo"
         uses: ncotti/cotti-ci/actions/rust@main

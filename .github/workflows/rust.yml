@@ -21,6 +21,11 @@ jobs:
         with:
           path: ${{ env.REPO_PATH }}
 
+      - name: "Install libsigrok"
+        shell: bash
+        run: |
+          apt install libsigrok-dev libsigrokdecode-dev
+
       - name: "Call cargo"
         uses: ncotti/cotti-ci/actions/rust@main
         with:

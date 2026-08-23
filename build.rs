@@ -187,7 +187,7 @@ See the crate documentation for details.
 }
 
 fn main() {
-    let feature_static = env::var_os("CARGO_FEATURE_STATIC").is_some();
+    let feature_static = false;
 
     let sigrok_lib_name: &str = "sigrok";
     let sigrok_headers: Vec<&str> = vec!["libsigrok/libsigrok.h"];

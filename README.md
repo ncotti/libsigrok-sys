@@ -1,4 +1,4 @@
-# FTD2XX-SYS
+# LIBSIGROK-SYS
 
 This crate generates Rust FFI (Foreign Function Interface) bindings for the [libsigrok library][libsigrok_wiki] and the [libsigrokdecode library][libsigrokdecode_wiki] using [bindgen][bindgen].
 
@@ -16,11 +16,9 @@ sudo apt install libsigrok-dev libsigrokdecode-dev
 
 The `LD_LIBRARY_PATH` variable takes precedence over the system paths.
 
-You may choose to compile the library statically or dynamically by setting the `static` feature in your Cargo.toml. By default, the library is dynamically linked.
-
 ```toml
 [dependencies]
-libsigrok = { version = "x.x.x", features = ["static"] }
+libsigrok-sys = "x.x.x"
 ```
 
 <!-- External links -->
